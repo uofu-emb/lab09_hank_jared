@@ -19,7 +19,7 @@ Answer the question: does there exist a sequence of events, such that an invaria
 Yes. A **nb_approach** signal can be triggered. After this a **sb_approach** signal can be triggered. Now, after **elapsed** time is at a value of 10 the **lowered** signal will be triggered for the barrier. A **sb_depart** signal then is triggered and **raised** state is triggered. The problem is that **nb_depart** was never triggered and there is still a train on the track. This is a safety hazard.
 
 ## Prove it
-[Updated FSM](updated_fsm.pdf)\
+[Updated FSM](updated_fsm.pdf)
 | number | arms_down | alarm_on | northbound_present | southbound_present | north_approach | south_approach | north_depart | south_depart | ringing | safety_hazard |
 |--------|-----------|----------|--------------------|--------------------|----------------|----------------|--------------|--------------|---------|---------------|
 | 0      | 0         | 0        | 0                  | 0                  |        6       |         5      |    21        |    21        |    20   |               |
