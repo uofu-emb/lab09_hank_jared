@@ -4,10 +4,12 @@
 [Jared's FSM](jared_fsm_prelab.pdf)
 
 ## Invariants
-1. With your partner, write down a set of invariants your system should have, with a specific emphasis on safety invariants.
-1. You should be able to identify specific invariant conditions, that if violated, represent a unsafe condition or safety hazard.
-1. Also consider invariants that are assumptions made about the environment or the scenario.
-1. Write your invariants in the form a logical predicate, i.e. a statement that must be true.
+1. System must have power at all times.
+1. Trains can only go in one direction.
+1. Only one train per track
+1. Alarm must be on 10 seconds before barrier is lowered until 10 seconds after it is raised and always when a train is present
+1. Alarm must be off otherwise
+1. An arrival event must happen before a depature event.
 
 ## Varying invariants
 Answer the question: does there exist a sequence of events, such that an invariant is not longer true?
@@ -34,6 +36,11 @@ Yes. A **nb_approach** signal can be triggered. After this a **sb_approach** sig
 | 14     | 1         | 1        | 1                  | 0                  |                |                |              |              |         |               |
 | 15     | 1         | 1        | 1                  | 1                  |                |                |              |              |         |               |
 
-| number | invariant |
-|--------|-----------|
-| 16     |           |
+| number |     invariant     |
+|--------|-------------------|
+| 16     |       power       |
+| 17     | single direction  |
+| 18     | one train / track |
+| 19     |     alarm on      |
+| 20     |     alarm off     |
+| 21     |  arrival bf dept  |
