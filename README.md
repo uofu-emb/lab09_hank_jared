@@ -1,6 +1,6 @@
-## Part 1
+# Part 1
 ## Prelab
-[Hank's FSM](hank_fsm_prelab.pdf)
+[Hank's FSM](hank_fsm_prelab.pdf)\
 [Jared's FSM](jared_fsm_prelab.pdf)
 
 ## Invariants
